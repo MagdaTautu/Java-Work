@@ -4,23 +4,20 @@ public class Main {
 //        int n=Integer.parseInt(str);
         //create latin square n
         int[][] matrix;
-        int i,j;
+        int i,j,k=6;
         matrix = new int[6][6];
-        for(i=1;i<=5;i++)
+        for(i=1; i<=5; i++)
         {
-            for(j=1;j<=5;j++)
+            int x = k;
+            while (x<= 5)
             {
-                if(i==1)
-                {
-                    matrix[i][j]=0+j;
-                }
-                else matrix[i][j]=0;
+              System.out.print(x + " ");
+                x++;
             }
-        }
-        for(i=1;i<=5;i++)
-        {
-            for(j=1;j<=5;j++)
-                System.out.println(matrix[i][j]);
+            for (j=1; j<k; j++)
+               System.out.print(j + " ");
+            k--;
+            System.out.println();
         }
     }
 }
